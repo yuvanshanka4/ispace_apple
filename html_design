@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple History</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        /* Add more CSS styles for your elements */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apple: A Journey Through Innovation</h1>
+    </header>
+    <div class="container">
+        <h2>About Apple</h2>
+        <p>Founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in 1976...</p>
+        <h2>Key Milestones</h2>
+        <ul>
+            <li>1984: Introduction of the Macintosh</li>
+            <li>2001: Launch of the iPod</li>
+            <li>2007: iPhone Revolution</li>
+            <li>2010: iPad Unveiled</li>
+        </ul>
+        <h2>Products</h2>
+        <h3>iPhone</h3>
+        <p>The iPhone revolutionized the mobile industry...</p>
+        <h3>iPad</h3>
+        <p>The iPad transformed the way we...</p>
+        <h3>MacBook</h3>
+        <p>The MacBook lineup combines sleek design...</p>
+    </div>
+    <!-- Add more sections, images, and creative elements here -->
+</body>
+</html>
