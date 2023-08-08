@@ -5,25 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple History</title>
     <style>
-        /* Add your CSS styling here */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul {
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
         }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Header Styles */
         header {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem;
         }
+
+        /* Container Styles */
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
-        /* Add more CSS styles for your elements */
+
+        /* Section Heading Styles */
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        /* List Item Styles */
+        ul {
+            list-style: disc;
+            margin-left: 2rem;
+        }
+
+        /* Link Styles */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Image Styles */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add more CSS styles for your elements as needed */
     </style>
 </head>
 <body>
@@ -42,12 +94,21 @@
         </ul>
         <h2>Products</h2>
         <h3>iPhone</h3>
-        <p>The iPhone revolutionized the mobile industry...</p>
+        <img src="iphone.jpg" alt="iPhone" />
+        <p>The first iPhone was introduced by Apple's co-founder Steve Jobs on January 9, 2007...</p>
+        <p>Buy Now: <a href="https://www.apple.com/iphone/">Get Your iPhone</a></p>
         <h3>iPad</h3>
-        <p>The iPad transformed the way we...</p>
+        <img src="ipad.jpeg" alt="iPad" />
+        <p>The first iPad was introduced by Apple's co-founder Steve Jobs on January 27, 2010...</p>
+        <p>Buy Now: <a href="https://www.apple.com/ipad/">Get Your iPad</a></p>
         <h3>MacBook</h3>
-        <p>The MacBook lineup combines sleek design...</p>
+        <img src="mac.jpeg" alt="MacBook" />
+        <p>The first MacBook was introduced in 2006, marking Apple's transition from PowerPC processors to Intel processors...</p>
+        <p>Buy Now: <a href="https://www.apple.com/macbook-air/">Get Your MacBook</a></p>
+        <h3>Apple Watch</h3>
+        <img src="apple_watch.jpeg" alt="Apple Watch" />
+        <p>The first Apple Watch was introduced by Apple's CEO Tim Cook on April 24, 2015...</p>
+        <p>Buy Now: <a href="https://www.apple.com/watch/">Get Your Apple Watch</a></p>
     </div>
-    <!-- Add more sections, images, and creative elements here -->
 </body>
 </html>
