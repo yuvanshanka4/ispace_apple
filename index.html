@@ -5,83 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple History</title>
     <style>
-        /* Reset some default browser styles */
+        
         body, h1, h2, h3, p, ul {
             margin: 0;
             padding: 0;
         }
 
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
+        nav {
+            
+            text-align: center;
+            background-color: darkgray;
+            padding: 1rem 0;
         }
 
-        /* Header Styles */
+        nav ul {
+            list-style: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: lightblue;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color:pink;
+            color: black;
+        }
         header {
-            background-color: #333;
+            background-color: black;
             color: white;
             text-align: center;
             padding: 1rem;
         }
-
-        /* Container Styles */
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: #fff;
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
-
-        /* Section Heading Styles */
         h2 {
             margin-top: 2rem;
             font-size: 1.5rem;
-            color: #333;
-        }
+            color: black;
 
-        /* List Item Styles */
+        }
+        h3 {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: black;
+            text-align: center;
+
+        }
         ul {
             list-style: disc;
             margin-left: 2rem;
         }
 
-        /* Link Styles */
         a {
-            color: #007bff;
+            color: blue;
             text-decoration: none;
             transition: color 0.3s ease-in-out;
         }
 
         a:hover {
-            color: #0056b3;
+            color: lightblue;
         }
 
-        /* Image Styles */
         img {
             max-width: 100%;
-            height: auto;
+            height: 100px;
+            width: 100px;
             border-radius: 8px;
             margin: 1rem 0;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            
         }
 
         img:hover {
             transform: scale(1.05);
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
         }
+        .buy{
+            text-align: center;
 
-        /* Add more CSS styles for your elements as needed */
+        }
+        @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section h2,
+.section p {
+    animation: fadeInUp 1s ease-in-out;
+}
+
     </style>
 </head>
 <body>
     <header>
         <h1>Apple: A Journey Through Innovation</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="https://www.apple.com/store">More Products</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h2>About Apple</h2>
         <p>Founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in 1976...</p>
@@ -92,23 +144,30 @@
             <li>2007: iPhone Revolution</li>
             <li>2010: iPad Unveiled</li>
         </ul>
-        <h2>Products</h2>
-        <h3>iPhone</h3>
-        <img src="iphone.jpg" alt="iPhone" />
-        <p>The first iPhone was introduced by Apple's co-founder Steve Jobs on January 9, 2007...</p>
-        <p>Buy Now: <a href="https://www.apple.com/iphone/">Get Your iPhone</a></p>
-        <h3>iPad</h3>
-        <img src="ipad.jpeg" alt="iPad" />
-        <p>The first iPad was introduced by Apple's co-founder Steve Jobs on January 27, 2010...</p>
-        <p>Buy Now: <a href="https://www.apple.com/ipad/">Get Your iPad</a></p>
-        <h3>MacBook</h3>
-        <img src="mac.jpeg" alt="MacBook" />
-        <p>The first MacBook was introduced in 2006, marking Apple's transition from PowerPC processors to Intel processors...</p>
-        <p>Buy Now: <a href="https://www.apple.com/macbook-air/">Get Your MacBook</a></p>
-        <h3>Apple Watch</h3>
-        <img src="apple_watch.jpeg" alt="Apple Watch" />
-        <p>The first Apple Watch was introduced by Apple's CEO Tim Cook on April 24, 2015...</p>
-        <p>Buy Now: <a href="https://www.apple.com/watch/">Get Your Apple Watch</a></p>
+        <h2 id="aaaa">Trending Products</h2>
+        <h3>iPhone 14 pro</h3>
+        
+        <p>The iPhone 14 is the latest addition to Apple's iconic iPhone lineup, continuing the tradition of innovation and excellence</p>
+        <p>Featuring a sleek design, advanced camera technology, and enhanced performance, the iPhone 14 raises the bar for smartphones</p>
+        <p class="buy">Buy Now: <a href="https://www.apple.com/iphone/"><img src="iphone.jpg" alt="iPhone" /></a></p>
+        <hr/>
+        <h3>iPad 3</h3>
+        <p>The iPad 3, introduced by Apple on March 7, 2012, brought significant improvements to the tablet experience</p>
+        <p>With its high-resolution Retina display, improved processing power, and enhanced graphics performance, the iPad 3 set new standards</p>
+        <p class="buy">Buy Now: <a href="https://www.apple.com/ipad/"><img src="ipad.jpeg" alt="iPad" /></a></p>
+        <hr/>
+        <h3>MacBook Pro 16</h3>
+        
+        <p>The MacBook Pro 16-inch, launched by Apple, delivers powerful performance and a stunning display for professionals</p>
+    <p>Equipped with the latest processors, improved thermal design, and a larger high-resolution Retina display, it's a powerhouse</p>
+        <p class="buy">Buy Now: <a href="https://www.apple.com/macbook-air/"><img src="mac.jpeg" alt="MacBook" /></a></p>
+
+        <hr/>
+        <h3>Apple Watch Series 8</h3>
+        
+        <p>The Apple Watch Series 8, the latest iteration of Apple's smartwatch, combines cutting-edge health monitoring with sleek design...</p>
+        <p>With advanced features like ECG monitoring, blood oxygen measurement, and more, the Series 8 empowers users to take control of their health...</p>
+        <p class="buy">Buy Now: <a href="https://www.apple.com/watch/"><img src="apple_watch.jpeg" alt="Apple Watch" /></a></p>
     </div>
 </body>
 </html>
